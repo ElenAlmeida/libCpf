@@ -1,8 +1,8 @@
 module.exports = {
     'env': {
+        'browser': true,
         'commonjs': true,
-        'es6': true,
-        'node': true
+        'es6': true
     },
     'extends': 'eslint:recommended',
     'globals': {
@@ -29,58 +29,66 @@ module.exports = {
             'error',
             'always'
         ],
-        'camelcase' : 2,
-        'id-length' : 2,
-        'keyword-spacing' : [
-            "error", 
-            { "after": true }
+        'id-length': 2,
+        'camelcase': ["error", {properties: "always"}],
+        'keyword-spacing': [
+            'error', {
+            'after': true
+        }],
+        'space-infix-ops': [
+            'error', {
+            'int32Hint': false
+        }], 
+        'comma-spacing': [
+            'error', {
+            'before': false,
+            'after': true
+        }],
+        'space-before-blocks': 2,
+        'spaced-comment': [
+            'error',
+            'always'
         ],
-        'space-infix-ops' : 2,
-        'comma-spacing' : [
-            "error", {
-                 "before": false, 
-                 "after": true 
-                }
-        ],
-        'space-before-blocks' : 2,
-        'spaced-comment' : [
-            "error", 
-            "always"
-        ],
-        'key-spacing' : [
-            "error", 
-            { "beforeColon": false }
-        ],
-        'no-multi-spaces' : "error",
+        'key-spacing': [
+            'error', {
+            'beforeColon': true
+        }],
+        'no-multi-spaces': [
+            'error', {
+            'ignoreEOLComments': false
+        }],
         'space-in-parens': [
-            "error",
-             "always",
-              { "exceptions": ["empty"] }
+            'error',
+            'never'
         ],
-        'space-before-function-paren' : [
-            "error", 
-            "never"
+        'space-before-function-paren': [
+            'error',
+            'never'
         ],
         'func-call-spacing': [
-            "error",
-             "never"
+            'error',
+            'never'
         ],
-        'no-multiple-empty-lines': "error",
-        'padded-blocks' : [
-            "error", 
-            { "blocks": "never" }
-        ],
+        'no-multiple-empty-lines': [
+            'error', {
+            'max': 0,
+            'maxBOF': 1
+        }], 
+        'padded-blocks': [
+            'error',
+            'never'
+        ], 
         'quotes': [
-            "error",
-             "single"
-        ],
-        'no-floating-decimal': "error",
-        'object-property-newline' : "error",
-        'brace-style': "error",
+            'error',
+            'single'
+        ], 
+        'no-floating-decimal': 2,
+        'object-property-newline': 2,
+        'brace-style': 2,
         'eqeqeq': [
-            "error", 
-            "always"
+            'error',
+            'always'
         ],
-        'no-array-constructor': "error",      
+        'no-array-constructor': 2,
     }
 };
