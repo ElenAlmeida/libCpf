@@ -8,9 +8,10 @@
  
 >  $  npm install cpfvalidatorln 
 
+
 ### Como utilizar:
 
-> const validate = require("cpfValidatorln");
+> const validate = require("cpfvalidatorln");
 
 > validate.cpfValidator('31306573041')
 
