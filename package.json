@@ -2,7 +2,7 @@
   "name": "cpfValidatorln",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "scripts": {
     "test": "nyc mocha"
   },
