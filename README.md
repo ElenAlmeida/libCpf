@@ -11,7 +11,9 @@
 ### Como utilizar:
 
 > const validate = require("cpfValidatorln");
+
 > validate.cpfValidator('31306573041')
+
 > // returns "true"
 
 
