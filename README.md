@@ -6,7 +6,7 @@
 
  ### Como instalar: 
  
->  $  npm install cpfValidatorln 
+>  $  npm install cpfvalidatorln 
 
 ### Como utilizar:
 
